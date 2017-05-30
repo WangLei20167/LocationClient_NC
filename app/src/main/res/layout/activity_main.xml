@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="1">
+
+
+    <TextView
+        android:id="@+id/positionView"
+        android:hint="经度：
+纬度："
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:textSize="20dp"
+        />
+
+    <TextView
+        android:id="@+id/addressView"
+        android:layout_width="fill_parent"
+        android:layout_height="130dp"
+        android:textSize="25dp"
+        android:hint="这里显示服务器发来的地址信息"
+        />
+
+    <EditText
+        android:id="@+id/Edit_IP"
+        android:text=""
+        android:hint="在此输入设备号"
+        android:gravity="center_vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:digits="1234567890."
+        android:singleLine="true"
+        style="@android:style/Widget.DeviceDefault.EditText">
+    </EditText>
+
+
+
+    <Button
+        android:text="点击获取父节点IP"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/button_log_in"
+        style="@android:style/Widget.Button.Inset" />
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <Button
+            android:text="连接父节点"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/button_connect"
+            android:layout_weight="1"
+            style="@android:style/Widget.Button.Inset" />
+
+        <Button
+            android:text="发送给父节点"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/button_sendToParent"
+            android:layout_weight="1"
+            style="@android:style/Widget.Button.Inset" />
+    </LinearLayout>
+
+    <Button
+        android:text="自动执行"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/button_AutoRun"
+        style="@android:style/Widget.Button.Inset"/>
+
+    <TextView
+        android:text="显示流量信息"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:id="@+id/tv_trafficInfor" />
+
+</LinearLayout>

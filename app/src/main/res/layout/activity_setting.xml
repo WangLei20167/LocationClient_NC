@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:text=""
+        android:hint="这里显示IP服务器发来的提示信息"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:id="@+id/IP_promptInfo"
+        />
+
+    <TextView
+        android:text="在下面输入IP服务器的IP地址和端口号"
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:id="@+id/IPServer" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:layout_weight="1"
+            android:id="@+id/edit_IPServerIP"
+            android:hint="IPServer_IP"
+            android:digits="1234567890."
+            android:singleLine="true"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:layout_weight="1"
+            android:id="@+id/edit_IPServerPort"
+            android:singleLine="true"
+            android:inputType="number"
+            android:hint="IPServer_Port(8261)" />
+    </LinearLayout>
+    <TextView
+        android:text="在下面输入定位服务器的IP地址和端口号"
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:id="@+id/AddressServer" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:layout_weight="1"
+            android:id="@+id/edit_LocationServerIP"
+            android:hint="LocationServer_IP"
+            android:digits="1234567890."
+            android:singleLine="true"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:layout_weight="1"
+            android:id="@+id/edit_LocationServerPort"
+            android:inputType="number"
+            android:singleLine="true"
+            android:hint="LocationServer_Port(8260)" />
+    </LinearLayout>
+
+    <Button
+        android:text="返回"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/button_back"
+        style="@android:style/Widget.Button.Inset"/>
+</LinearLayout>
